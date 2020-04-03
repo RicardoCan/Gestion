@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50721
 File Encoding         : 65001
 
-Date: 2020-04-02 19:44:55
+Date: 2020-04-02 21:27:10
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -114,16 +114,14 @@ DROP TABLE IF EXISTS `roles`;
 CREATE TABLE `roles` (
   `id_rol` int(11) NOT NULL,
   `rol` varchar(120) COLLATE utf8_spanish2_ci DEFAULT NULL,
-  `foto` varchar(255) COLLATE utf8_spanish2_ci DEFAULT NULL,
-  PRIMARY KEY (`id_rol`),
-  KEY `fk` (`foto`)
+  PRIMARY KEY (`id_rol`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 -- ----------------------------
 -- Records of roles
 -- ----------------------------
-INSERT INTO `roles` VALUES ('1', 'Administrador', 'user2.jpg');
-INSERT INTO `roles` VALUES ('2', 'Usuario', 'user1.jpg');
+INSERT INTO `roles` VALUES ('1', 'Administrador');
+INSERT INTO `roles` VALUES ('2', 'Usuario');
 
 -- ----------------------------
 -- Table structure for users
@@ -136,18 +134,16 @@ CREATE TABLE `users` (
   `apellidos` varchar(120) COLLATE utf8_spanish2_ci DEFAULT NULL,
   `id_rol` int(11) DEFAULT NULL,
   `active` varchar(20) COLLATE utf8_spanish2_ci DEFAULT NULL,
-  `foto` varchar(255) COLLATE utf8_spanish2_ci DEFAULT NULL,
   PRIMARY KEY (`nick`),
   KEY `fk` (`id_rol`),
-  KEY `foto` (`foto`),
   KEY `active` (`active`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 -- ----------------------------
 -- Records of users
 -- ----------------------------
-INSERT INTO `users` VALUES ('admin', '1234', 'Ricardo Antonio', 'Can Matey', '1', 'Administrador', null);
-INSERT INTO `users` VALUES ('rodrigo', '1234', 'Rodrigo Orlando', 'Kantun Chan', '1', 'Administrador', null);
-INSERT INTO `users` VALUES ('carlos', '1234', 'Carlos Emanuel', 'May Bacab', '1', 'Administrador', null);
-INSERT INTO `users` VALUES ('gerardo', '1234', 'Gerardo Enrique', 'Chim Can', '1', 'Administrador', null);
-INSERT INTO `users` VALUES ('rufino', '1234', 'Rufino', 'Pech Chin', '2', 'Usuario', null);
+INSERT INTO `users` VALUES ('admin', '1234', 'Ricardo Antonio', 'Can Matey', '1', 'Administrador');
+INSERT INTO `users` VALUES ('rodrigo', '1234', 'Rodrigo Orlando', 'Kantun Chan', '1', 'Administrador');
+INSERT INTO `users` VALUES ('carlos', '1234', 'Carlos Emanuel', 'May Bacab', '1', 'Administrador');
+INSERT INTO `users` VALUES ('gerardo', '1234', 'Gerardo Enrique', 'Chim Can', '1', 'Administrador');
+INSERT INTO `users` VALUES ('rufino', '1234', 'Rufino', 'Pech Chin', '2', 'Usuario');
