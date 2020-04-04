@@ -65,3 +65,11 @@ Route::get('imprimir3','apiCalificacionesController@imprimir3');
 Route::get('imprimir4','apiClasesController@imprimir4');
 Route::get('imprimir5','apiCompromisosController@imprimir5');
 
+
+
+//Maestro Detalle
+Route::apiResource('prod','ApiProductosController');
+Route::apiResource('apiventa','ApiVentasController');
+Route::apiResource('apidetalle','ApiDetalle_ventasController');
+
+Route::view('ventas','venta');

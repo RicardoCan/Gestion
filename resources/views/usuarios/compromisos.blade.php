@@ -109,13 +109,18 @@
 
               <button class="btn btn-info"><a href="califusu" style="color: white">Anterior</a></button></center>
 
+
+
+
                <br>
               
               <div class="container">
                 <div class="row">
                   <div class="col clearfix">
 
-                     <center><button class="btn btn-secondary"><a href="{{url('logout')}}" style="color: white">Salir</a></button></center>
+                     <center><button class="btn btn-dark"><a href="ventas" style="color: white">Ventas</a></button></center>
+
+                    <!--  <center><button class="btn btn-secondary"><a href="{{url('logout')}}" style="color: white">Salir</a></button></center> -->
                     
                   </div>
                 </div>
