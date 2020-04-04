@@ -26,13 +26,13 @@
 		<div class="row">
 			<div class="col clearfix">
 				<table class="table table-bordered">
-					<thead style="background:orange">
-						<th>SKU</th>
-						<th>NOMBRE</th>
-						<th width="15%">PRECIO</th>
-						<th width="15%">CANTIDAD</th>
-						<th width="15%">TOTAL</th>
-						<th>ACCIONES</th>
+					<thead style="background:brown">
+						<th style="color: white">SKU</th>
+						<th style="color: white">NOMBRE</th>
+						<th style="color: white" width="15%">PRECIO</th>
+						<th style="color: white" width="15%">CANTIDAD</th>
+						<th style="color: white" width="15%">TOTAL</th>
+						<th style="color: white">ACCIONES</th>
 					</thead>
 					<tbody>
 						<tr v-for="(v,index) in ventas">
