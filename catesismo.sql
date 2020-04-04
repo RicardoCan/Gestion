@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50721
 File Encoding         : 65001
 
-Date: 2020-04-03 22:45:26
+Date: 2020-04-03 22:56:27
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -146,6 +146,8 @@ INSERT INTO `productos` VALUES ('1', 'lapiz', '2.5', '10');
 INSERT INTO `productos` VALUES ('2', 'borrador', '3', '12');
 INSERT INTO `productos` VALUES ('3', 'lapicero', '5', '11');
 INSERT INTO `productos` VALUES ('4', 'tijera', '14', '8');
+INSERT INTO `productos` VALUES ('5', 'libreta', '12', '4');
+INSERT INTO `productos` VALUES ('6', 'tajador', '2', '10');
 
 -- ----------------------------
 -- Table structure for roles
